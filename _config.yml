@@ -2,7 +2,7 @@ title:             Clean Blog
 email:             low_buffer@naver.com
 description:       A Blog Theme by Start Bootstrap
 author:            Start Bootstrap
-baseurl:           "/startbootstrap-clean-blog-jekyll"
+baseurl:           "/"
 url:               "https://buffer625.github.io"
 
 # Social Profiles
