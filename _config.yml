@@ -6,9 +6,9 @@ baseurl:           "/"
 url:               "https://buffer625.github.io"
 
 # Social Profiles
-twitter_username:  SBootstrap
-github_username:   BlackrockDigital
-facebook_username: StartBootstrap
+twitter_username:  @Mad_b33
+github_username:   Madb33
+facebook_username: Buffer625
 
 # Build settings
 markdown:          kramdown
