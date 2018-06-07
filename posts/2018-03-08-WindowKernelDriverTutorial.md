@@ -21,7 +21,7 @@ background: '/blueScreen.png'
 >![WDK 다운로드](Window kernel Driver Tutorial img/DownloadWDK.jpg)
 >사진처럼 뭐 Next 연타하고 이렇게 설치과정이 나온다.
 
->![WDK 설치후 visual studio](](Window kernel Driver Tutorial img/visualStudioAfterWDK.jpg)
+>![WDK 설치후 visual studio](img/visualStudioAfterWDK.jpg)
 >이후에 visual studio에서 프로젝트에서 c++탭에 사진처럼 User Mode Driver, WRL(UMDF) 솔루션이 생긴걸 볼수있다.
 
 
@@ -60,7 +60,7 @@ net start 드라이버이름
 ### Window Kernel Debugging using Windbg
 ---------------------
 호스트 운영체제와 통실할 serial port를 가상머신에서 \\.\pipe\"name"형식으로 지어주면된다
-![SerialPort](Window kernel Driver Tutorial img/SerialPort.jpg)
+![SerialPort](img/SerialPort.jpg)
 맥에서도 nvram같이 커널 디버깅이 가능하도록 심볼을 준것처럼 윈도우에서도 유저레벨 cmd에서 이런 옵션을 줘야한다.
 
 ```
@@ -69,7 +69,7 @@ bcdedit /debug ON
 bcdedit /dbgsettings serial debugport:2 baudrate:115200
 ```
 
-![bcdedit명령어 화면](Window kernel Driver Tutorial img/bcdedit.jpg)
+![bcdedit명령어 화면](img/bcdedit.jpg)
 
 여기서 디버거 포트는 아까 우리가 가상머신 시리얼 포트번호를 주는곳이다.
 
@@ -89,7 +89,7 @@ sxe ld MAD.sys //MAD라는 드라이버를 로드될때 exception
 g  //go
 ```
 
-![moudle_bp](Window kernel Driver Tutorial img/sxe.jpg)
+![moudle_bp](img/sxe.jpg)
 
 드라이버를 로드시켜주면 해당 사진처럼 break가 걸립니다.
 
@@ -104,8 +104,8 @@ F8 = Step In
 F10 = Step Over
 ```
 
-![bp_to_DriverEntry](Window kernel Driver Tutorial img/bp.jpg)
+![bp_to_DriverEntry](img/bp.jpg)
 
 자 이러면 해당 문자열을 확인할수 있습니다!
 
-![final](Window kernel Driver Tutorial img/result.jpg)
+![final](img/result.jpg)
